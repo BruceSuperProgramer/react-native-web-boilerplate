@@ -6,8 +6,10 @@ import {
   StyleSheet,
   Text,
   View,
+  Dimensions,
 } from 'react-native';
 
+const {height} = Dimensions.get('screen');
 class HomeScreen extends Component {
   render() {
     return (
@@ -66,6 +68,7 @@ class HomeScreen extends Component {
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: 'white',
+    height: height,
   },
   engine: {
     position: 'absolute',
