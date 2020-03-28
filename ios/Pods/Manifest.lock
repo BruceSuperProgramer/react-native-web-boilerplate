@@ -10,7 +10,7 @@ PODS:
   - EXFileSystem (8.0.0):
     - UMCore
     - UMFileSystemInterface
-  - EXFont (8.0.0):
+  - EXFont (8.1.0):
     - UMCore
     - UMFontInterface
   - EXKeepAwake (8.0.0):
@@ -472,7 +472,7 @@ SPEC CHECKSUMS:
   EXConstants: 4051b16c17ef3defa03c541d42811dc92b249146
   EXErrorRecovery: d36db99ec6a3808f313f01b0890eb443796dd1c2
   EXFileSystem: 6e0d9bb6cc4ea404dbb8f583c1a8a2dcdf4b83b6
-  EXFont: 6187b5ab46ee578d5f8e7f2ea092752e78772235
+  EXFont: 8326ecf966be559f7ced7c8e221a32fc4d9ed8b0
   EXKeepAwake: 66e9f80b6d129633725a0e42f8d285c229876811
   EXLinearGradient: 75f302f9d6484267a3f6d3252df2e7a5f00e716a
   EXLocation: 3c75d012ca92eed94d4338778d79c49d1252393a

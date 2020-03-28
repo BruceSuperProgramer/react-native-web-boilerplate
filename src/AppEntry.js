@@ -1,21 +1,34 @@
 import React from 'react';
-import {Dimensions, StyleSheet, Text, View} from 'react-native';
-import Header from './components/Header';
-const {width, height} = Dimensions.get('window');
+import {Dimensions} from 'react-native';
 import AppNavigator from './navigation/AppNavigator';
+import {Ionicons} from '@expo/vector-icons';
+import {AppLoading} from 'expo';
+import * as Font from 'expo-font';
 
-const AppEntry = () => <AppNavigator />;
+const {width, height} = Dimensions.get('window');
 
-const styles = StyleSheet.create({
-  outer: {
-    flex: 1,
-  },
-  container: {
-    height: (height * 9) / 10,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default class AppEntry extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isReady: false,
+    };
+  }
 
-export default AppEntry;
+  async componentDidMount() {
+    await Font.loadAsync({
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+      ...Ionicons.font,
+    });
+    this.setState({isReady: true});
+  }
+
+  render() {
+    if (!this.state.isReady) {
+      return <AppLoading />;
+    }
+
+    return <AppNavigator />;
+  }
+}
