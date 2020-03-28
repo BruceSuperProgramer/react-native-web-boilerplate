@@ -1,11 +1,8 @@
 import React from 'react';
-import {Dimensions} from 'react-native';
 import AppNavigator from './navigation/AppNavigator';
-import {Ionicons} from '@expo/vector-icons';
 import {AppLoading} from 'expo';
 import * as Font from 'expo-font';
-
-const {width, height} = Dimensions.get('window');
+import {Ionicons} from '@expo/vector-icons';
 
 export default class AppEntry extends React.Component {
   constructor(props) {

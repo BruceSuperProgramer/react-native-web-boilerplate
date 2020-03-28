@@ -4,10 +4,10 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   View,
   Dimensions,
 } from 'react-native';
+import {Card, CardItem, Body, Text} from 'native-base';
 
 const {height} = Dimensions.get('screen');
 class HomeScreen extends Component {
@@ -58,6 +58,13 @@ class HomeScreen extends Component {
                 </Text>
               </View>
             </View>
+            <Card>
+              <CardItem>
+                <Body>
+                  <Text>//Your text here</Text>
+                </Body>
+              </CardItem>
+            </Card>
           </ScrollView>
         </SafeAreaView>
       </>
