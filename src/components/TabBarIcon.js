@@ -2,6 +2,7 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Icon} from 'native-base';
 import {colors} from '../styles';
+// import Icon from 'react-native-vector-icons/Ionicons';
 
 const styles = StyleSheet.create({
   tabSection: {
