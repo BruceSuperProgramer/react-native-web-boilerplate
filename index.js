@@ -1,9 +1,10 @@
-import { AppRegistry, Platform } from 'react-native';
+import {AppRegistry, Platform} from 'react-native';
 import App from './App';
 
 AppRegistry.registerComponent('ReactNativeWebBoilerplate', () => App);
 
 if (Platform.OS === 'web') {
-  const rootTag = document.getElementById('root') || document.getElementById('main');
-  AppRegistry.runApplication('ReactNativeWebBoilerplate', { rootTag });
+  const rootTag =
+    document.getElementById('root') || document.getElementById('main');
+  AppRegistry.runApplication('ReactNativeWebBoilerplate', {rootTag});
 }
