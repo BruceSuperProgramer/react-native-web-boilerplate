@@ -6,4 +6,4 @@ cd ..
 
 expo start
 
-select run ios/android/web
+select run ios/android/web from expo panel
